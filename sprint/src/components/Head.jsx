@@ -1,4 +1,3 @@
-import '../geral.css'
 import './Head.css'
 
 const Head = () =>{
