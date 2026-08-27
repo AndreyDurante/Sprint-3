@@ -1,0 +1,13 @@
+.card-integrantes{
+    width: 200px;
+    height: 150px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-integrantes p{
+    width: 55%;
+}

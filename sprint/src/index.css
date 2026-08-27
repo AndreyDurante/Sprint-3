@@ -75,3 +75,53 @@ a{
   grid-template-rows: repeat(2, 1fr);
   gap: 40px;
 }
+
+.publico-alvo{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.div-publico{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1;
+  gap: 40px;
+}
+
+.galeria{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;  
+}
+
+.fotos-galeria{
+  display: grid;
+  grid-template-columns: 1fr, 2fr;
+  grid-template-rows: 2;
+}
+
+.equipe {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.div-integrantes{
+  display: flex;
+  gap: 20px;
+}
+
+footer {
+  width: auto;
+  height: 20vh;
+  background-color: black;
+}

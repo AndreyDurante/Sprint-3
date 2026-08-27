@@ -1,6 +1,8 @@
 import './App.css'
 import Botao from './components/Botao'
 import Head from './components/Head'
+import Integrantes from './components/Integrantes'
+import Publico from './components/Publico'
 import Solucao from './components/Solucao'
 
 function App() {
@@ -34,7 +36,30 @@ function App() {
 
         <section className='publico-alvo'>
           <h2>Público Alvo</h2>
-          
+          <div className='div-publico'>
+            <Publico/>
+            <Publico/>
+            <Publico/>
+            <Publico/>
+          </div>
+        </section>
+
+        <section className='galeria'>
+          <h2>Galeria</h2>
+          <main className='fotos-galeria'></main>
+        </section>
+
+        <section className='equipe'>
+          <h2>Quem somos?</h2>
+          <div className='div-integrantes'>
+            <Integrantes/>
+            <Integrantes/>
+            <Integrantes/>
+            <Integrantes/>
+          </div>
+          <footer>
+            
+          </footer>
         </section>
     </div>
       

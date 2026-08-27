@@ -1,0 +1,9 @@
+.card-publico{
+    height: 300px;
+    width: 200px;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
