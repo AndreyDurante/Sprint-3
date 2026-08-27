@@ -1,9 +1,23 @@
 .card-publico{
     height: 300px;
-    width: 200px;
+    width: 300px;
     background-color: aquamarine;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.card-publico p{
+    width: 80%;
+    text-align: center;
+}
+
+.card-publico h6{
+    font-size: 22px;
+    margin: 12px;
+}
+
+.icone {
+    font-size: 40px;
 }

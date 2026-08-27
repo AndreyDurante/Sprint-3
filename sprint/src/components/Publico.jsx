@@ -1,11 +1,14 @@
 import "./publico.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleUser } from '@fortawesome/free-solid-svg-icons';
 
-const Publico = ({nome, descricao}) => {
+const Publico = ({titulo, descricao}) => {
     return (
         <div className="card-publico">
+            <FontAwesomeIcon icon={faCircleUser} className="icone" />
             <div className="imagem-publico"></div>
-            <h6 className="nome">{nome}dawdadwdaw</h6>
-            <p className="descricao-publico">{descricao}wdawdasdw</p>
+            <h6 className="nome">{titulo}</h6>
+            <p className="descricao-publico">{descricao}</p>
         </div>
     )
 }

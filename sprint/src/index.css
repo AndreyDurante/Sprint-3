@@ -74,11 +74,13 @@ a{
   font-size: 42px;
 }
 
+
+
 .cards-solucao{
   margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
   gap: 40px;
 }
 
@@ -138,6 +140,11 @@ footer {
   .solucao{
     height: auto;
   }
+
+  .solucao p {
+    width: 80%;
+    text-align: center;
+  }
   .cards-solucao{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
@@ -155,6 +162,16 @@ footer {
   .div-publico{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
+    text-align: center;
+  }
+
+  .div-publico h6{
+    font-size: 18px;
+  }
+
+  .div-publico p{
+    margin-top: 13px;
+    font-size: 13px;
   }
 
   .div-integrantes{
