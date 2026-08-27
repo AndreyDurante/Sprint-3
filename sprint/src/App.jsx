@@ -11,7 +11,7 @@ function App() {
       <section className='landing'>
           <Head></Head>
             <article className='conteudo-landing'>
-              <h6>Lorem ipsum dolor sit amet.</h6>
+          <h6 className='titulo'>Lorem ipsum dolor sit amet.</h6>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus explicabo, debitis fugit error rerum consequatur.</p>
               <Botao
               texto = "Conheça a solução"
@@ -19,12 +19,11 @@ function App() {
               />
             </article>
             <div className='imagem-landing'>
-
             </div>
         </section>
 
         <section className='solucao'>
-          <h6>Título solução</h6>
+          <h2 className='titulo titulo-solucao'>Título solução</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus explicabo, debitis fugit error rerum consequatur.</p> 
           <div className='cards-solucao'>
             <Solucao/>
@@ -35,7 +34,7 @@ function App() {
         </section>
 
         <section className='publico-alvo'>
-          <h2>Público Alvo</h2>
+        <h2 className='titulo'>Público Alvo</h2>
           <div className='div-publico'>
             <Publico/>
             <Publico/>
@@ -45,12 +44,12 @@ function App() {
         </section>
 
         <section className='galeria'>
-          <h2>Galeria</h2>
+        <h2 className='titulo'>Galeria</h2>
           <main className='fotos-galeria'></main>
         </section>
 
         <section className='equipe'>
-          <h2>Quem somos?</h2>
+        <h2 className='titulo'>Quem somos?</h2>
           <div className='div-integrantes'>
             <Integrantes/>
             <Integrantes/>

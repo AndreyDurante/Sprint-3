@@ -21,8 +21,14 @@
 
 .head a:hover {
     opacity: 100%;
-    text-shadow:
-        0 0 5px #ffffff,
-        0 0 10px #ffffff;
     color: white;
+    transform: scale(1.05);
+}
+
+@media (max-width: 1040px) {
+    .head{
+        width: 100%;
+        left: 0;
+        font-size: 12px;
+    }
 }
