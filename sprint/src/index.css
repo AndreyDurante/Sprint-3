@@ -8,6 +8,10 @@
   font-style: normal;
 }
 
+body {
+  background-color: #272727;
+}
+
 a{
   text-decoration: none;
   color: black;
@@ -31,7 +35,6 @@ a{
   width: 100vw;
   display: flex;
   width: 100%;
-  background-color: #0065fc;
 }
 
 .conteudo-landing {
@@ -40,7 +43,6 @@ a{
   align-items: flex-start;
   justify-content: center;
   height: 100vh;
-  background-color: #ff3b3b;
   width:50%;
   gap: 40px;
 }
@@ -56,5 +58,20 @@ a{
 }
 
 .imagem-landing {
-  background-color: aqua;
+}
+
+.solucao{
+  height: 100vh;
+  background-color: darkslategrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards-solucao{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 40px;
 }

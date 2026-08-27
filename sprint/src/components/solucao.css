@@ -1,0 +1,19 @@
+.card {
+    width: 400px;
+    height: 200px;
+    background: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card p{
+    font-size: 13px;
+    width: 90%;
+}
+
+.titulo-solucao{
+    font-size: 30px;
+}
