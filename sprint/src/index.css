@@ -7,6 +7,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -60,11 +61,17 @@ a {
 }
 
 .conteudo-landing h6 {
-  font-size: 4rem;
-  line-height: 1.1;
+  font-size: 72px;
+  line-height: 0.5;
   color: #ffffff;
 }
 
+.conteudo-landing span{
+  font-weight: bold;
+  font-size: 32px;
+  color: #ff5e5b;
+  text-shadow: 1px 1px white;
+}
 .conteudo-landing p {
   max-width: 80%;
   color: #d4d4d4;
@@ -109,6 +116,10 @@ a {
   background: #111111;
 }
 
+.publico-alvo h2{
+  font-size: 36px;
+}
+
 .div-publico {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -147,9 +158,35 @@ a {
 }
 
 footer {
-  width: auto;
-  height: 20vh;
-  background-color: #161616;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 45vh;
+  align-items: center;
+  background-color: #2d2d2d;
+  margin-top: 50px;
+}
+
+.texto-footer
+
+footer h6{
+  color: #ff5e5b;
+}
+
+.footer-integrantes{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 20%;
+  margin-left: 20px;
+}
+
+.texto-footer{
+  padding-left: 100px;
+}
+
+.footer-integrantes h6{
+  font-size: 32px;
 }
 
 @media (max-width: 1040px) {

@@ -1,16 +1,24 @@
 .botao {
     padding: 12px 22px;
     background-color: #ff5e5b;
-    margin-left: 20px;
     border-radius: 10px;
     color: #ffffff;
     font-weight: 600;
-    display: inline-block;
     transition: 0.25s ease;
-    box-shadow: 0 8px 18px rgba(255, 94, 91, 0.25);
 }
 
 .botao:hover {
-    background-color: #ff726f;
-    transform: translateY(-1px);
+    animation: vaivolta 1.2s infinite ease-in-out;
 }
+
+    @keyframes vaivolta {
+    
+        0%,
+        100% {
+            scale: 1;
+        }
+    
+        50% {
+            scale: 1.05;
+        }
+    }

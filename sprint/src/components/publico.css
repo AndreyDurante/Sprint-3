@@ -10,6 +10,12 @@
     align-items: center;
     border-radius: 18px;
     padding: 18px 14px;
+    transition: 1s ease;
+}
+
+.card-publico:hover {
+    border: solid 1px #ff5e5b;
+    transform: scale(1.1);
 }
 
 .card-publico p {
@@ -20,9 +26,10 @@
 }
 
 .card-publico h6 {
-    font-size: 22px;
+    font-size: 26px;
     margin: 12px;
     color: #ffffff;
+    text-align: center;
 }
 
 .icone-publico {
