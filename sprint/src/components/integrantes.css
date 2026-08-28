@@ -1,13 +1,22 @@
-.card-integrantes{
+.card-integrantes {
     width: 200px;
     height: 150px;
-    background-color: aqua;
+    background-color: #1f1f1f;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 18px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
-.card-integrantes p{
+.card-integrantes p {
     width: 55%;
+    color: #d8d8d8;
+    text-align: center;
+}
+
+.card-integrantes h6 {
+    color: #ffffff;
 }

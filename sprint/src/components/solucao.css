@@ -1,19 +1,34 @@
 .card {
     width: 400px;
     height: 200px;
-    background: aqua;
+    background: #1f1f1f;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    border-radius: 18px;
+    padding: 20px 18px;
 }
 
-.card p{
+.card p {
     font-size: 13px;
     width: 90%;
+    color: #d8d8d8;
+    line-height: 1.6;
 }
 
-.titulo-solucao{
+.titulo-solucao {
     font-size: 30px;
+    color: #ffffff;
+}
+
+.titulo-solucao h6 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    color: #ffffff;
 }
