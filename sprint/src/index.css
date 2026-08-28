@@ -42,7 +42,7 @@ a {
 }
 
 .landing {
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   display: flex;
   background: #171717;
@@ -53,11 +53,23 @@ a {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  height: 100vh;
+  height: auto;
   width: 50%;
   gap: 28px;
   padding-left: 60px;
   background: #171717;
+}
+
+.imagem-landing{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #171717;
+}
+
+.imagem-landing img{
+  height: 80%;
+  width: 50%;
 }
 
 .conteudo-landing h6 {
@@ -85,7 +97,7 @@ a {
 }
 
 .solucao {
-  height: 100vh;
+  height: auto;
   background-color: #1b1b1b;
   display: flex;
   flex-direction: column;
@@ -96,7 +108,20 @@ a {
 }
 
 .solucao h2 {
-  font-size: 42px;
+  padding-top: 100px;
+  font-size: 72px;
+}
+
+.solucao span{
+  color: #ff5e5b;
+  text-shadow: 3px 2px white;
+  font-weight: bold;
+}
+
+.solucao p{
+  font-size: 20px;
+  width: 50%;
+  text-align: center;
 }
 
 .cards-solucao {
@@ -117,7 +142,7 @@ a {
 }
 
 .publico-alvo h2{
-  font-size: 36px;
+  font-size: 56px;
 }
 
 .div-publico {
@@ -127,18 +152,45 @@ a {
 }
 
 .galeria {
-  height: 100vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background: #111111;
+  margin-bottom: 150px;
+}
+
+.galeria h2{
+  margin-bottom: 50px;
+  font-size: 56px;
+}
+
+.fotos-galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .fotos-galeria {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 2;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 200px);
+  gap: 20px;
+}
+
+#comparacao {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+#grafico{
+  grid-row: span 2;
+}
+
+#gravando{
+  
+  grid-row: span 2;
 }
 
 .equipe {
@@ -149,6 +201,10 @@ a {
   justify-content: center;
   gap: 50px;
   background: #111111;
+}
+
+.equipe h2{
+  font-size: 56px;
 }
 
 .div-integrantes {
@@ -167,7 +223,6 @@ footer {
   margin-top: 50px;
 }
 
-.texto-footer
 
 footer h6{
   color: #ff5e5b;
@@ -189,9 +244,20 @@ footer h6{
   font-size: 32px;
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1024px) {
+  .landing{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: c;
+    margin-top: 200px;
+    width: 81%;
+    gap: 20px;
+  }
+
   .solucao {
     height: auto;
+    width: 81%;
   }
 
   .solucao p {
@@ -207,6 +273,7 @@ footer h6{
 
   .publico-alvo {
     height: auto;
+    width: 81%;
   }
 
   .publico-alvo h2 {
@@ -228,6 +295,11 @@ footer h6{
     font-size: 13px;
   }
 
+  .galeria{
+    height: auto;
+    width: 81%;
+  }
+
   .div-integrantes {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
@@ -235,6 +307,7 @@ footer h6{
 
   .equipe {
     height: auto;
+    width: 81%;
   }
 
   .landing {
@@ -243,5 +316,39 @@ footer h6{
 
   .conteudo-landing {
     width: 100%;
+  }
+}
+
+@media (max-width: 440px) {
+  .landing{
+    margin-top: 70px;
+    width: 81%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .landing h6{
+    line-height: 1;
+  }
+
+  .fotos-galeria{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .equipe{
+    text-align: center;
+
+    footer{
+      flex-wrap: wrap;
+      flex-direction: column;
+      height: auto;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    .footer-integrantes h6{
+      font-size: 20px;
+    }
   }
 }

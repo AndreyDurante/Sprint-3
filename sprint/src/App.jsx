@@ -7,6 +7,13 @@ import Solucao from './components/Solucao'
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleUser } from '@fortawesome/free-solid-svg-icons';
+import celular1 from "./assets/celular1.png"
+import celular22 from "./assets/celular22.png"
+import celular3 from "./assets/celular3.png"
+import comparacao from "./assets/comparacao_celulares.png"
+import grafico from "./assets/grafico_usuarios_ux.png"
+import gravando from "./assets/celular1_gravando.png"
+import Informacoes from './components/Informacoes'
 
 
 function App() {
@@ -23,24 +30,32 @@ function App() {
           />
         </article>
         <div className='imagem-landing'>
+          <img src={celular3} alt="Celular" />
         </div>
       </section>
 
       <section className='solucao' id='solucao'>
-        <h2 className='titulo titulo-solucao'>Nossa Solução</h2>
+        
+        <h2 className='titulo titulo-solucao'>Nossa <span>Solução</span></h2>
         <p>Desenvolvemos uma proposta focada em simplificar a experiência da câmera mobile através de uma interface moderna, limpa e intuitiva.</p>
         <div className='cards-solucao'>
           <Solucao
             titulo="Interface Minimalista"
             texto="Redução de elementos desnecessários para priorizar foco, velocidade e clareza visual."
+            imagem={celular1}
+            alt={""}
           />
           <Solucao
             titulo="Navegação Intuitiva"
             texto="Organização simples dos recursos principais para facilitar o uso diário."
+            imagem={celular22}
+            alt={""}
           />
           <Solucao
             titulo="Acesso Rápido"
             texto="Os modos mais utilizados ficam acessíveis imediatamente sem menus complexos."
+            imagem={celular3}
+            alt={""}
           />
 
         </div>
@@ -70,7 +85,12 @@ function App() {
 
       <section className='galeria' id='galeria'>
         <h2 className='titulo'>Galeria</h2>
-        <main className='fotos-galeria'></main>
+        <main className='fotos-galeria'>
+          <img src={comparacao} alt="Comparação" id='comparacao'/>
+          <img src={grafico} alt="Gráfico" id='grafico' />
+          <img src={gravando} alt="Gravando" id='gravando' />
+          
+        </main>
       </section>
 
       <section className='equipe' id='equipe'>
@@ -78,30 +98,38 @@ function App() {
         <div className='div-integrantes'>
           <Publico
             titulo={"Andrey Durante"}
-            descricao={"Desenvolvedor Front-End."}
+            descricao={"Desenvolvedor Full-Stack."}
           />
           <Publico
-            titulo={"Usuários idosos"}
-            descricao={"Muitas vezes se frustram com interfaces cheias de ícones e gestos pouco intuitivos."}
-          />
+            titulo={"Fábricio Macedo"}
+            descricao={"Desenvolvedor Front-End"}
+            />
           <Publico
-            titulo={"Usuários idosos"}
-            descricao={"Muitas vezes se frustram com interfaces cheias de ícones e gestos pouco intuitivos."}
-          />
+            titulo={"Felipe Macedo"}
+            descricao={"Especialista em UI/UX"}
+            />
           <Publico
-            titulo={"Usuários idosos"}
-            descricao={"Muitas vezes se frustram com interfaces cheias de ícones e gestos pouco intuitivos."}
+            titulo={"Gustavo Maciel"}
+            descricao={"Desenvolvedor da aplicação"}
           />
 
         </div>
         <footer id='contato'>
-          <div className='footer-integrantes'>
-            <h6>Integrantes</h6>
-            <p>Andrey - RM 569922</p>
-            <p>Fabrício - RM 573450</p>
-            <p>Felipe - RM 573404</p>
-            <p>Gustavo - RM 570720</p>
-          </div>
+          <Informacoes
+          titulo={"Integrantes"}
+          i1={"Andrey - RM 569922"}
+          i2={"Fabrício - RM 573450"}
+          i3={"Felipe - RM 573404"}
+          i4={"Gustavo - RM 570720"}
+          />
+          <Informacoes
+          titulo={"Contato"}
+          i1={"São Paulo, SP - Brasil"}
+          i2={"(11) 99999-9999"}
+          i3={"contato@fgasistemas.com"}
+          i4={"Sempre atendendo"}
+          />
+
           <p className='texto-footer'>Projeto desenvolvido pela equipe FGA Sistemas para projeto do Challenge da Jovi</p>
         </footer>
       </section>

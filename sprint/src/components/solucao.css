@@ -1,5 +1,5 @@
 .card {
-    width: 400px;
+    width: 500px;
     height: 200px;
     background: #1f1f1f;
     border: 1px solid rgba(255, 255, 255, 0.06);
@@ -13,7 +13,6 @@
     padding: 20px 18px;
     transition: 1s ease;
 }
-
 .card:hover {
     border: solid 1px #ff5e5b;
     transform: scale(1.1);
@@ -21,10 +20,11 @@
 
 .card:hover h6 {
     text-decoration: underline solid #ff5e5b 2px;
+    
 }
 
 .card p {
-    font-size: 13px;
+    font-size: 20px;
     width: 90%;
     color: #d8d8d8;
     line-height: 1.6;
@@ -39,6 +39,31 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     color: #ffffff;
+}
+
+.imagem{
+    display: flex;
+    justify-content: center;
+}
+
+.imagem img{
+    width: 300px;
+    height: 500px;
+}
+
+@media (max-width: 440px) {
+    .card{
+        width: 100%;
+        text-align: center;  
+    }
+
+    .titulo-solucao{
+        font-size: 15px;
+    }
+
+    .card p{
+        font-size: 15px;
+    }
 }

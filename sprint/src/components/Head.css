@@ -26,10 +26,16 @@
     transform: scale(1.05);
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1024px) {
     .head {
-        width: 100%;
+        width: 81%;
         left: 0;
         font-size: 12px;
     }
+}
+
+@media (max-width: 441px) {
+  .head a{
+    font-size: 10px;
+  }
 }
